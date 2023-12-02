@@ -1,0 +1,212 @@
+[ {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2023-11-29T14:32:04.618Z",
+    "line" : 14,
+    "name" : "Validate Testing of ADD_Place",
+    "description" : "",
+    "id" : "api-testing-of-loaction;validate-testing-of-add-place;;2",
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 1401319700,
+        "status" : "passed"
+      },
+      "line" : 5,
+      "name" : "Add Add_Place payload with \"rahulshetty\" \"English\" \"Bangalore,India\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"rahulshetty\"",
+          "offset" : 27
+        }, {
+          "val" : "\"English\"",
+          "offset" : 41
+        }, {
+          "val" : "\"Bangalore,India\"",
+          "offset" : 51
+        } ],
+        "location" : "StepDefinition.stepDefinition.add_add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 3089543700,
+        "status" : "passed"
+      },
+      "line" : 6,
+      "name" : "Call \"AddPlaceAPI\" with \"Post\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"AddPlaceAPI\"",
+          "offset" : 5
+        }, {
+          "val" : "\"Post\"",
+          "offset" : 24
+        } ],
+        "location" : "StepDefinition.stepDefinition.call_with_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 2665400,
+        "status" : "passed"
+      },
+      "line" : 7,
+      "name" : "verify API sucess with statusCode 200",
+      "match" : {
+        "arguments" : [ {
+          "val" : "200",
+          "offset" : 34
+        } ],
+        "location" : "StepDefinition.stepDefinition.verify_api_sucess_with_status_code(java.lang.Integer)"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 697741400,
+        "status" : "passed"
+      },
+      "line" : 8,
+      "name" : "check \"status\" message as \"OK\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"status\"",
+          "offset" : 6
+        }, {
+          "val" : "\"OK\"",
+          "offset" : 26
+        } ],
+        "location" : "StepDefinition.stepDefinition.check_message_as(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 31265800,
+        "status" : "passed"
+      },
+      "line" : 9,
+      "name" : "check \"scope\" message as \"APP\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"scope\"",
+          "offset" : 6
+        }, {
+          "val" : "\"APP\"",
+          "offset" : 25
+        } ],
+        "location" : "StepDefinition.stepDefinition.check_message_as(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 1276982900,
+        "status" : "passed"
+      },
+      "line" : 10,
+      "name" : "verify place_id map with \"rahulshetty\" using \"GetPlaceAPI\" request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"rahulshetty\"",
+          "offset" : 25
+        }, {
+          "val" : "\"GetPlaceAPI\"",
+          "offset" : 45
+        } ],
+        "location" : "StepDefinition.stepDefinition.verify_place_id_map_with_using_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    } ],
+    "tags" : [ {
+      "name" : "@AddPlace"
+    } ]
+  }, {
+    "start_timestamp" : "2023-11-29T14:32:11.155Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 1988000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "StepDefinition.before.RunOnlyDeleteMethod()"
+      }
+    } ],
+    "line" : 19,
+    "name" : "Validate Delete payload",
+    "description" : "",
+    "id" : "api-testing-of-loaction;validate-delete-payload",
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 1988700,
+        "status" : "passed"
+      },
+      "line" : 20,
+      "name" : "Add delete payload with place_id",
+      "match" : {
+        "location" : "StepDefinition.stepDefinition.add_delete_payload_with_place_id()"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 1291846400,
+        "status" : "passed"
+      },
+      "line" : 21,
+      "name" : "Call \"DeletePlaceAPI\" with \"Post\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"DeletePlaceAPI\"",
+          "offset" : 5
+        }, {
+          "val" : "\"Post\"",
+          "offset" : 27
+        } ],
+        "location" : "StepDefinition.stepDefinition.call_with_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "status" : "passed"
+      },
+      "line" : 22,
+      "name" : "verify API sucess with statusCode 200",
+      "match" : {
+        "arguments" : [ {
+          "val" : "200",
+          "offset" : 34
+        } ],
+        "location" : "StepDefinition.stepDefinition.verify_api_sucess_with_status_code(java.lang.Integer)"
+      },
+      "keyword" : "Then "
+    }, {
+      "result" : {
+        "duration" : 16639200,
+        "status" : "passed"
+      },
+      "line" : 23,
+      "name" : "check \"status\" message as \"OK\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"status\"",
+          "offset" : 6
+        }, {
+          "val" : "\"OK\"",
+          "offset" : 26
+        } ],
+        "location" : "StepDefinition.stepDefinition.check_message_as(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "And "
+    } ],
+    "tags" : [ {
+      "name" : "@DeletePlace"
+    } ]
+  } ],
+  "name" : "API Testing of Loaction",
+  "description" : "",
+  "id" : "api-testing-of-loaction",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/java/Features/AddPlace.feature",
+  "tags" : [ ]
+} ]
